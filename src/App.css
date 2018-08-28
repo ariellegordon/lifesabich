@@ -1,13 +1,13 @@
 .foodtruck {
-  height: 1500px;
+  height: 500px;
   animation-duration: 3s;
-  margin-top: 5%;
   /* margin-left: 12%; */
   animation-name: move-truck;
 }
 
 .foodtruck-container {
-  margin-left: 15%;
+  /* margin-left: 15%; */
+  margin-left: 18%;
 }
 
 .pop-up-menu {
@@ -19,7 +19,7 @@
 
 .lifesabich-logo {
   text-align: center;
-  font-size: 200px;
+  font-size: 175px;
   margin-top: -5%;
   animation: 5s ease 0s normal fadein;
 }
@@ -44,12 +44,10 @@
 @keyframes move-truck {
   from {
     margin-left: 100%;
-    width: 300%;
   }
 
   to {
-    margin-left: -10%;
-    width: 100%;
+    margin-left: 0%;
   }
 }
 

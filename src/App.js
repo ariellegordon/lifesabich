@@ -26,9 +26,9 @@ class App extends Component {
     return (
       <div>
         {this.state.displayMenu ? menu : null}
-        <div className="About">
+        {/* <div className="About">
           <p style={{ fontFamily: "SabonBol" }}>About</p>
-        </div>
+        </div> */}
         <div className="foodtruck-container" onClick={this.handleTruckClick}>
           <img className="foodtruck" src={foodtruck} />
         </div>
