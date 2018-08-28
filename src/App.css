@@ -1,0 +1,73 @@
+.foodtruck {
+  height: 1500px;
+  animation-duration: 3s;
+  margin-top: 5%;
+  /* margin-left: 12%; */
+  animation-name: move-truck;
+}
+
+.foodtruck-container {
+  margin-left: 15%;
+}
+
+.pop-up-menu {
+  position: absolute;
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.lifesabich-logo {
+  text-align: center;
+  font-size: 200px;
+  margin-top: -5%;
+  animation: 5s ease 0s normal fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: SabonBol;
+  src: url("SabonBol.AFM");
+}
+
+@keyframes move-truck {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: -10%;
+    width: 100%;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
