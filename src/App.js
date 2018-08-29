@@ -25,15 +25,19 @@ class App extends Component {
     );
     return (
       <div>
-        {this.state.displayMenu ? menu : null}
-        {/* <div className="About">
+        <div>
+          {this.state.displayMenu ? menu : null}
+          {/* <div className="About">
           <p style={{ fontFamily: "SabonBol" }}>About</p>
         </div> */}
-        <div className="foodtruck-container" onClick={this.handleTruckClick}>
-          <img className="foodtruck" src={foodtruck} />
-        </div>
-        <div className="lifesabich-logo">
-          <h3 style={{ marginTop: -5, fontFamily: "SabonBol" }}>Lifesabich</h3>
+          <div className="foodtruck-container" onClick={this.handleTruckClick}>
+            <img className="foodtruck" src={foodtruck} />
+          </div>
+          <div className="lifesabich-logo">
+            <h3 style={{ marginTop: -5, fontFamily: "SabonBol" }}>
+              Lifesabich
+            </h3>
+          </div>
         </div>
       </div>
     );
