@@ -2,6 +2,8 @@ import React, { Component } from "react";
 // import logo from "./foodtruck.svg";
 import "./App.css";
 import foodtruck from "./foodtruck.svg";
+import modal from "./foodtruck-menu.svg";
+import Modal from "./Modal";
 
 class App extends Component {
   constructor() {
@@ -13,25 +15,17 @@ class App extends Component {
   }
 
   handleTruckClick() {
-    this.setState({ displayMenu: !this.state.displayMenu });
-    console.log("Clicked", this.state);
+    let modal = document.querySelector(".menu");
+    modal.classList.add("active");
   }
 
   render() {
-    const menu = (
-      <div className="pop-up-menu">
-        <p>hi</p>
-      </div>
-    );
     return (
       <div>
         <div>
-          {this.state.displayMenu ? menu : null}
-          {/* <div className="About">
-          <p style={{ fontFamily: "SabonBol" }}>About</p>
-        </div> */}
           <div className="foodtruck-container" onClick={this.handleTruckClick}>
             <img className="foodtruck" src={foodtruck} />
+            <Modal />
           </div>
           <div className="lifesabich-logo">
             <h3 style={{ marginTop: -5, fontFamily: "SabonBol" }}>
