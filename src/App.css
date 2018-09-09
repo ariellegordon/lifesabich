@@ -16,7 +16,6 @@
 
 .menu {
   visibility: hidden;
-  box-shadow: 0 0 24px -2px black;
   height: 10px;
   position: absolute;
   top: 0;
@@ -27,7 +26,7 @@
 .menu.active {
   visibility: visible;
   animation-name: menu-zoom;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 
 .pop-up-menu {
@@ -58,10 +57,10 @@
 
 @keyframes menu-zoom {
   from {
-    transform: scale(1);
+    transform: scale(0.25);
   }
   to {
-    transform: scale(1.5);
+    transform: scale(1);
   }
 }
 
