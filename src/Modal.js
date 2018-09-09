@@ -22,14 +22,7 @@ export default class Modal extends React.Component {
     return (
       <div className="menu">
         <div className="modal-container">
-          <img
-            src={modal}
-            style={{
-              backgroundColor: "#ffc5c5",
-              height: "280px",
-              width: "928px"
-            }}
-          />
+          <img className="foodtruck-window" src={modal} />
 
           <button className="about-toggle" onClick={this.toggleAbout}>
             About

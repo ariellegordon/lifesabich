@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   handleTruckClick() {
-    let modal = document.querySelector(".menu");
+    let modal = document.querySelector(".modal-container");
     modal.classList.add("active");
   }
 
@@ -25,7 +25,15 @@ class App extends Component {
         <div>
           <div className="foodtruck-container" onClick={this.handleTruckClick}>
             <img className="foodtruck" src={foodtruck} />
-            <Modal />
+            {/* <Modal /> */}
+            <div className="modal-container">
+              <img
+                src={modal}
+                style={{
+                  backgroundColor: "#ffc5c5"
+                }}
+              />
+            </div>
           </div>
           <div className="lifesabich-logo">
             <h3 style={{ marginTop: -5, fontFamily: "SabonBol" }}>
