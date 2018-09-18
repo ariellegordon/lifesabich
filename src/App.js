@@ -11,28 +11,33 @@ class App extends Component {
     this.state = {
       displayMenu: false
     };
-    this.handleTruckClick = this.handleTruckClick.bind(this);
+    this.handleWindowHover = this.handleWindowHover.bind(this);
   }
 
-  handleTruckClick() {
-    let modal = document.querySelector(".modal-container");
-    modal.classList.add("active");
+  handleWindowHover(evt) {
+    const { target } = evt;
+    target.classList.add("expand");
+
+    // let modal = document.querySelector(".modal-container");
+    // modal.classList.add("active");
   }
 
   render() {
     return (
       <div>
         <div>
-          <div className="foodtruck-container" onClick={this.handleTruckClick}>
-            <img className="foodtruck" src={foodtruck} />
-            {/* <Modal /> */}
-            <div className="modal-container">
-              <img
-                src={modal}
-                style={{
-                  backgroundColor: "#ffc5c5"
-                }}
-              />
+          <div className="foodtruck-container">
+            <div className="foodtruck">
+              <div className="foodtruck-full">
+                <img src={foodtruck} />
+              </div>
+              <div className="foodtruck-window">
+                <img
+                  src={modal}
+                  style={{ backgroundColor: "#ffc5c5" }}
+                  onMouseOver={this.handleWindowHover}
+                />
+              </div>
             </div>
           </div>
           <div className="lifesabich-logo">
