@@ -9,13 +9,21 @@
 .foodtruck-window img {
   height: 138px;
   position: absolute;
-  margin-top: -465px;
+  margin-top: -480px;
   margin-left: -125px;
   transition: all 2s linear;
 }
 
 .foodtruck-window {
   position: relative;
+}
+
+.about-sabich {
+  visibility: hidden;
+  position: relative;
+  margin-left: -1100px;
+  display: flex;
+  justify-content: center;
 }
 
 .foodtruck-container {
@@ -37,13 +45,67 @@
   z-index: 10;
 }
 
-/* .active {
-  visibility: visible;
-  /* animation-name: menu-zoom;
-  animation-duration: 5s; */
-
 .expand {
   transform: scale(2) translate(-65px, 50px);
+}
+
+.about {
+  position: absolute;
+  margin-top: -400px;
+  margin-left: 380px;
+}
+
+.about h3 {
+  font-size: 50px;
+}
+
+.about h3:hover {
+  color: white;
+}
+
+.sabich {
+  position: absolute;
+  margin-top: -400px;
+  margin-left: 730px;
+}
+
+.sabich h3 {
+  font-size: 50px;
+  /* font-family: SabonBol; */
+}
+
+.sabich h3:hover {
+  color: white;
+}
+
+.display-menu {
+  visibility: visible;
+  animation: 3s ease 0s normal fadein;
+}
+
+.about-inner {
+  position: absolute;
+  visibility: hidden;
+  width: 650px;
+  text-align: center;
+  margin-left: -100px;
+  margin-top: -250px;
+  background-color: #ffc5c5;
+}
+
+.about-inner h3 {
+  width: 100%;
+  z-index: 1;
+}
+
+.about-x-button {
+  position: absolute;
+  margin-top: -70px;
+}
+
+.display-about {
+  visibility: visible;
+  /* animation: 0.5s linear 0s normal fadein; */
 }
 
 .pop-up-menu {
@@ -123,22 +185,22 @@
   position: relative;
 }
 
-. .foodtruck-window {
+/* .foodtruck-window {
   background-color: "#ffc5c5";
   position: absolute;
   height: 200px;
   width: 600px;
-}
-
+} */
+/*
 .modal-about {
   visibility: hidden;
   position: absolute;
   width: 100%;
   margin-top: 10%;
   text-align: center;
-}
+} */
 
-.modal-sabich {
+/* .modal-sabich {
   visibility: hidden;
 }
 
@@ -148,4 +210,4 @@
 
 .visible {
   visibility: visible;
-}
+} */
