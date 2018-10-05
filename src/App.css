@@ -85,7 +85,7 @@
 
 .about-inner {
   position: absolute;
-  visibility: hidden;
+  display: none;
   width: 650px;
   text-align: center;
   margin-left: -100px;
@@ -103,10 +103,21 @@
   margin-top: -70px;
 }
 
-.display-about {
-  visibility: visible;
+.display {
+  display: block;
   z-index: 1000;
-  /* animation: 0.5s linear 0s normal fadein; */
+}
+
+.sabich-inner {
+  position: absolute;
+  display: none;
+  text-align: center;
+  width: 650px;
+  margin-top: 200px;
+}
+
+.sabich-x-button {
+  position: absolute;
 }
 
 .pop-up-menu {

@@ -14,6 +14,7 @@ class App extends Component {
     this.handleWindowHover = this.handleWindowHover.bind(this);
     this.showAbout = this.showAbout.bind(this);
     this.removeAbout = this.removeAbout.bind(this);
+    this.showSabich = this.showSabich.bind(this);
   }
 
   handleWindowHover(evt) {
@@ -26,7 +27,12 @@ class App extends Component {
   showAbout() {
     console.log("Clicked Show About");
     let aboutInner = document.querySelector(".about-inner");
-    aboutInner.classList.toggle("display-about");
+    aboutInner.classList.toggle("display");
+  }
+
+  showSabich() {
+    let sabichInner = document.querySelector(".sabich-inner");
+    sabichInner.classList.toggle("display");
   }
 
   removeAbout() {
@@ -83,13 +89,25 @@ class App extends Component {
                       <div className="about-x-button" onClick={this.showAbout}>
                         <h3 style={{ fontFamily: "SabonBol" }}>x</h3>
                       </div>
-                      <h3 style={{ fontFamily: "SabonBol", fontSize: "20px" }}>
+                      <p style={{ fontFamily: "SabonBol", fontSize: "20px" }}>
                         {aboutData}
-                      </h3>
+                      </p>
                     </div>
                   </div>
                   <div className="sabich">
-                    <h3 style={{ fontFamily: "SabonBol" }}>What is Sabich?</h3>
+                    <div onClick={this.showSabich}>
+                      <h3 style={{ fontFamily: "SabonBol" }}>
+                        What is Sabich?
+                      </h3>
+                    </div>
+                    <div className="sabich-inner">
+                      <div className="sabich-x-button" onClick={this.showAbout}>
+                        <h3 style={{ fontFamily: "SabonBol" }}>x</h3>
+                      </div>
+                      <h3 style={{ fontFamily: "SabonBol", fontSize: "20px" }}>
+                        PLACEHOLDER FOR SABICH
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
